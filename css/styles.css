@@ -177,25 +177,34 @@ iframe {
   }
 }
 
-/* The slides are hidden by default */
-#slider {
+
+
+.slider {
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .slide {
   display: none; 
-}
-
-.slide-img {
-  width: 100%;
-  height: auto;
-}
-
-.slider-container {
   position: relative;
-  width: 100%;
-  max-width: 600px; 
-  margin: 0 auto;
+}
+
+.slide img {
+  width: 100%;  
+  max-width: 100%; 
+  height: auto;
+  display: block;
+  margin: 0 auto;  
+}
+
+.slide p {
+  margin-top: 10px;  
+  text-align: center;  
+  font-size: 1rem;  
+  color: #333; 
 }
 
 .prev, .next {
@@ -221,11 +230,4 @@ iframe {
 
 .prev:hover, .next:hover {
   background-color: rgba(0, 0, 0, 0.8);
-}
-
-.slide p {
-  text-align: center;
-  font-size: 1rem;
-  color: #333;
-  padding: 10px 0;
 }
