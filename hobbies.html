@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <script src="js/hobbies_slider.js" defer></script>
   </head>
     
   <body>
@@ -22,33 +23,34 @@
         <h1><strong>Hobbies</strong></h1>
       </div>
 
-        <section>
-          <h2>Soccer</h2>
-          <div class="hobby-container">
-            <img src="images/soccer.JPG" alt="Playing soccer on a sunny day">
-            <p>I started playing soccer when I was a kid. Although I don't play competitively,
-            I often play with my friends when we have spare time. I also watch soccer, mostly La Liga, as a Real Madrid fan.</p>
+      <section>
+        <h2>Blender</h2>
+        <div class="hobby-container">
+          <p>I started learning Blender when COVID hit, and since then I have learned more about 3D modeling and basic animation 
+          through online tutorials and self-teaching.</p>
+          
+          <div class="slider-container">
+            <div class="slider" id="slider">
+              <div class="slide">
+                <img src="images/soccer.JPG" alt="Playing soccer on a sunny day" class="slide-img">
+                <p>Playing soccer on a sunny day with friends in the local park.</p>
+              </div>
+              <div class="slide">
+                <img src="images/blender.PNG" alt="Recreating blender bedroom tutorial from youtube" class="slide-img">
+                <p>Recreating a bedroom design in Blender after following an online tutorial.</p>
+              </div>
+              <div class="slide">
+                <img src="images/think_and_grow_rich.JPG" alt="Top 3 self development books you need to read" class="slide-img">
+                <p>Top 3 self-development books I recommend for personal growth and success.</p>
+              </div>
+            </div>
+            
+            <button class="prev" id="prev">&#10094;</button>
+            <button class="next" id="next">&#10095;</button>
           </div>
-        </section>
-
-        <section>
-          <h2>Blender</h2>
-          <div class="hobby-container">
-            <img src="images/blender.PNG" alt="Recreating blender bedroom tutorial from youtube">
-            <p>I started learning Blender when COVID hit, and since then I have learned more about 3D modeling and basic animation 
-            through online tutorials and self-teaching.</p>
-          </div>
-        </section>
-
-        <section>
-          <h2>Reading Books</h2>
-          <div class="hobby-container">
-            <img src="images/think_and_grow_rich.JPG" alt=" Top 3 self development books you need to read ">
-            <p>I started reading self-development books a year ago, and now I have made it a habit. If there are any books I would recommend to people who would like
-            to learn more about good habits and consistency, my personal picks would be: The Slight Edge by Jeff Olson, The Magic of Thinking Big by David J. Schwartz, 
-            and Think and Grow Rich by Napoleon Hill.</p>
-          </div>
-        </section>
+        </div>
+      </section>
+      
     </main>
   </body>
 </html>
