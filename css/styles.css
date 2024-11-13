@@ -177,34 +177,23 @@ iframe {
   }
 }
 
-
-
-.slider {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.slide {
-  display: none; 
+/* The slides are hidden by default */
+#slider {
   position: relative;
 }
 
-.slide img {
-  width: 100%;  
-  max-width: 100%; 
-  height: auto;
-  display: block;
-  margin: 0 auto;  
+
+.slider-container {
+  position: relative;
+  width: 100%;
+  max-width: 600px; 
+  margin:  auto;
 }
 
 .slide p {
-  margin-top: 10px;  
-  text-align: center;  
-  font-size: 1rem;  
-  color: #333; 
+  font-size: 2rem;  
+  color: #333;
+  margin: 50px
 }
 
 .prev, .next {
@@ -231,3 +220,5 @@ iframe {
 .prev:hover, .next:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
+
+
