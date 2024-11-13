@@ -1,10 +1,10 @@
 function initMap() {
-  const iitTower = { lat: 41.8354, lng: -87.6278 };
+  const iitTower = { lat: 41.8354, lng: -87.6278 };  
 
   const map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 16,
-    center: iitTower,
-    mapTypeId: 'roadmap'
+    zoom: 16,        
+    center: iitTower, 
+    mapTypeId: 'roadmap'  
   });
 
   const marker = new google.maps.Marker({
@@ -21,15 +21,12 @@ function initMap() {
     infoWindow.open(map, marker);
   });
 
-  // Additional features //
+  // additional features
   map.setOptions({
     styles: [
       { "elementType": "geometry", "stylers": [{ "color": "#212121" }] },
       { "elementType": "labels.icon", "stylers": [{ "visibility": "off" }] }
-    ]
-  });
-
-  map.setOptions({
+    ],
     zoomControl: true,
     streetViewControl: true
   });
